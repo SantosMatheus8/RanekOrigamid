@@ -12,8 +12,8 @@ const Produto = () => {
     async function fetchProduto(url) {
       try {
         setCarregando(true);
-        const responte = await fetch(url);
-        const json = await responte.json();
+        const response = await fetch(url);
+        const json = await response.json();
         setProduto(json);
       } catch (err) {
         console.log("Ocorreu um erro");

@@ -7,9 +7,16 @@ const Produtos = () => {
   const [produtos, setProdutos] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("https://ranekapi.origamid.dev/json/api/produto").then((response) =>
-      response.json().then((json) => setProdutos(json))
-    );
+    async function fetchProdutos(url) {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        setProdutos(json);
+      } catch (err) {
+        console.log("Ocorreu um erro");
+      }
+    }
+    fetchProdutos("https://ranekapi.origamid.dev/json/api/produto");
   }, []);
 
   if (produtos === null) return null;

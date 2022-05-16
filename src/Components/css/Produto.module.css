@@ -16,9 +16,19 @@
   background-color: rgba(184, 255, 177, 0.7);
   border-radius: 4px;
   color:rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
 }
 
 .descricao
 {
   font-size: 1.2rem;
+}
+
+@media (max-width: 620px)
+{
+  .produto
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

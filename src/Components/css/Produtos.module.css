@@ -10,3 +10,22 @@
   font-size: 2rem;
   margin: 0.5rem 0 4rem 0;
 }
+
+@media (max-width: 900px)
+{
+  .produtos
+  {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px 2rem; 
+  }
+}
+
+@media (max-width: 620px)
+{
+  .produtos
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}
