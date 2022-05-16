@@ -1,0 +1,38 @@
+.contato
+{
+  display: flex;
+
+}
+
+.contato div
+{
+  margin-left: 2rem;
+}
+
+.img
+{
+  height: 32rem;
+  width: 21rem;
+}
+
+.informacoes
+{
+  list-style: none;
+  padding: 0px;
+}
+
+.informacoes li
+{
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.informacoes li::before
+{
+  content: '';
+  display: inline-block;
+  background-color: rgb(168, 168, 168);
+  height: 0.1rem;
+  margin-right: 0.5rem;
+  width: 1.2rem;
+}
