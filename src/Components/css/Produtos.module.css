@@ -1,0 +1,12 @@
+.produtos
+{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 0px 2rem; 
+}
+
+.nome
+{
+  font-size: 2rem;
+  margin: 0.5rem 0 4rem 0;
+}
