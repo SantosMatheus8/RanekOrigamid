@@ -8,14 +8,16 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<Produtos />} />
-          <Route path="contato" element={<Contato />} />
-          <Route path="produtos/:id" element={<Produto />} />
-        </Routes>
+        <div className="conteudo">
+          <Routes>
+            <Route path="/" element={<Produtos />} />
+            <Route path="contato" element={<Contato />} />
+            <Route path="produtos/:id" element={<Produto />} />
+          </Routes>
+        </div>
       </BrowserRouter>
       <Footer />
     </div>

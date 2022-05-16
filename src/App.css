@@ -5,14 +5,14 @@ body
 
 img
 {
-  max-width: 100%;
   border-radius: 0.5rem;
+  max-width: 100%;
 }
 
 a
 {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 h1
@@ -22,16 +22,48 @@ h1
 
 .animeLeft
 {
-  transform: translateX(-30px);
-  opacity: 0;
   animation: animeLeft 0.3s forwards;
+  opacity: 0;
+  transform: translateX(-30px);
 }
 
 @keyframes animeLeft
 {
   to
   {
-    transform: initial;
     opacity: initial;
+    transform: initial;
   }
+}
+
+.carregando
+{
+  animation: carregando 1s infinite;
+  border: 10px solid rgb(115, 115, 115);
+  border-radius: 50%;
+  border-right-color : transparent;
+  height: 20px;
+  width: 20px;
+}
+
+@keyframes carregando
+{
+  to
+  {
+    transform : rotate(360deg);
+  }
+}
+
+.App
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 70%;
+  min-height: calc(100vh + 10rem);
+}
+
+.conteudo
+{
+  flex: 1;
 }

@@ -1,0 +1,8 @@
+.footer
+{
+  box-sizing: border-box;
+  color: rgb(133, 133, 133);
+  height: 10rem;
+  padding-top: 5rem;
+  text-align: center;
+}

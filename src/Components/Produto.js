@@ -25,7 +25,7 @@ const Produto = () => {
     `);
   }, [id]);
 
-  if (carregando) return <p>Carregando ...</p>;
+  if (carregando) return <div className="carregando"></div>;
   if (produto === null) return null;
   return (
     <section className={styles.produto + " animeLeft"}>
